@@ -30,7 +30,7 @@ Does not depend on any other Skill, or on any persistent-memory structure. Build
 ## Install as a plugin
 
 ```
-/plugin marketplace add msamkari/persistent-memory-system-skill
+/plugin marketplace add msamkari/samkari-plugins
 /plugin install structured-handover@samkari-plugins
 ```
 
@@ -39,6 +39,10 @@ Does not depend on any other Skill, or on any persistent-memory structure. Build
 Source-available under PolyForm Noncommercial 1.0.0. Free for personal and other non-commercial use. See `LICENSE` for the full terms.
 
 Commercial use requires a separate license from the author. To discuss one, open an Issue (please don't post confidential details or personal contact information there; I'll reply with a way to continue privately).
+
+## Privacy and support
+
+This plugin is a single instruction file: it has no scripts or hooks, collects nothing, stores nothing and sends nothing anywhere itself. It only shapes how Claude writes the handover document from what you give it in the conversation. Support: GitHub Issues (link below).
 
 ## Report an Issue / Feedback
 
