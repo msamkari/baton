@@ -24,7 +24,7 @@ Does not depend on any other Skill, or on any persistent-memory structure. Build
 
 - `SKILL.md` — the Skill's definition.
 - `.claude-plugin/plugin.json` and `skills/structured-handover-doc/SKILL.md` — the Claude Code plugin packaging (the skill file is a copy of the root `SKILL.md`; keep them in sync).
-- `LICENSE` — PolyForm Noncommercial License 1.0.0.
+- `LICENSE` — MIT License.
 - `releases/v1/structured-handover-doc.skill` — the packaged bundle, ready to upload and activate.
 
 ## Install as a plugin
@@ -36,9 +36,7 @@ Does not depend on any other Skill, or on any persistent-memory structure. Build
 
 ## License
 
-Source-available under PolyForm Noncommercial 1.0.0. Free for personal and other non-commercial use. See `LICENSE` for the full terms.
-
-Commercial use requires a separate license from the author. To discuss one, open an Issue (please don't post confidential details or personal contact information there; I'll reply with a way to continue privately).
+MIT. See `LICENSE`. (Versions up to 1.0.2 were released under PolyForm Noncommercial 1.0.0; from 1.0.3 the project is MIT.)
 
 ## Privacy and support
 
