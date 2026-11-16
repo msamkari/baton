@@ -14,7 +14,11 @@ The output is a Claude Doc titled "[Subject] – [Domain] Handover", with five s
 4. Schedule & Key Dates
 5. Outstanding Items
 
-Always ends with one specific comment on the document (never a question in the chat).
+Always ends with one specific comment on the document. The only question allowed in the chat is one clarifying question before the document is created, and only when the subject cannot be inferred; once the document exists there is no chat question.
+
+**If no document tool is available** (for example in plain Claude Code), the skill says so in one line and offers to write the handover as a Markdown file in the project; it writes the file only after you say yes.
+
+**Data minimisation.** The skill leaves out health details, financial account numbers, passwords and keys, government ID numbers and contact details unless you explicitly ask for them to be included and they are needed for the handover. This is an instruction to the model: it is predicted to be followed, not verified with a live run, and you should still read the document before sharing it.
 
 ## Independence
 
