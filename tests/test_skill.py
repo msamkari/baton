@@ -18,18 +18,18 @@ def skill_text():
 class SkillTests(unittest.TestCase):
     def test_both_copies_and_bundle_are_identical(self):
         root = lf((ROOT / "SKILL.md").read_bytes())
-        self.assertEqual(root, lf((ROOT / "skills" / "structured-handover-doc" / "SKILL.md").read_bytes()))
-        with zipfile.ZipFile(ROOT / "releases" / "v1" / "structured-handover-doc.skill") as z:
-            self.assertEqual(z.namelist(), ["structured-handover-doc/SKILL.md"])
+        self.assertEqual(root, lf((ROOT / "skills" / "handover" / "SKILL.md").read_bytes()))
+        with zipfile.ZipFile(ROOT / "releases" / "v1" / "baton-handover.skill") as z:
+            self.assertEqual(z.namelist(), ["handover/SKILL.md"])
             self.assertIsNone(z.testzip())
             self.assertEqual(lf(z.read(z.namelist()[0])), root)
 
     def test_frontmatter_and_version(self):
         t = skill_text()
-        m = re.match(r"---\nname: structured-handover-doc\ndescription: (.+)\n---\n", t)
+        m = re.match(r"---\nname: handover\ndescription: (.+)\n---\n", t)
         self.assertTrue(m)
         j = json.loads((ROOT / ".claude-plugin" / "plugin.json").read_text(encoding="utf-8"))
-        self.assertEqual(j["name"], "structured-handover")
+        self.assertEqual(j["name"], "baton")
         self.assertEqual(j["license"], "MIT")
         self.assertRegex(j["version"], r"^\d+\.\d+\.\d+$")
         self.assertIn("## " + j["version"], (ROOT / "CHANGELOG.md").read_text(encoding="utf-8"))

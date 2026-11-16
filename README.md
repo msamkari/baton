@@ -1,4 +1,4 @@
-structured-handover-doc
+baton
 
 A fully independent Claude Skill — builds a structured handover/coordination document (Structured Handover Document) for any situation, project, or trip, from context scattered across a single conversation (messages, documents, images), into one unified format ready to share with a third party.
 
@@ -27,15 +27,15 @@ Does not depend on any other Skill, or on any persistent-memory structure. Build
 ## Files
 
 - `SKILL.md` — the Skill's definition.
-- `.claude-plugin/plugin.json` and `skills/structured-handover-doc/SKILL.md` — the Claude Code plugin packaging (the skill file is a copy of the root `SKILL.md`; keep them in sync).
+- `.claude-plugin/plugin.json` and `skills/handover/SKILL.md` — the Claude Code plugin packaging (the skill file is a copy of the root `SKILL.md`; keep them in sync).
 - `LICENSE` — MIT License.
-- `releases/v1/structured-handover-doc.skill` — the packaged bundle, ready to upload and activate.
+- `releases/v1/baton-handover.skill` — the packaged bundle, ready to upload and activate.
 
 ## Install as a plugin
 
 ```
 /plugin marketplace add msamkari/samkari-plugins
-/plugin install structured-handover@samkari-plugins
+/plugin install baton@samkari-plugins
 ```
 
 ## License
@@ -48,4 +48,4 @@ This plugin is a single instruction file: it has no scripts or hooks, collects n
 
 ## Report an Issue / Feedback
 
-Found a bug or have a suggestion? Please open a GitHub Issue in this repository: https://github.com/msamkari/structured-handover-doc-skill/issues
+Found a bug or have a suggestion? Please open a GitHub Issue in this repository: https://github.com/msamkari/baton/issues

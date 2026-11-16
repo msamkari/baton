@@ -1,5 +1,5 @@
 ---
-name: structured-handover-doc
+name: handover
 description: Build a structured handover document whenever the user needs to gather scattered context — messages, documents, images — about a situation, project, or trip, into one unified format ready to share with a third party — a doctor, a caregiver, a team, a travel companion, a new manager. Activate immediately for "handover doc", "handover document", "wrap up the situation so I can share it with...", "prepare a handoff file", "summarize this project for whoever continues after me", or any similar request to turn scattered context about a situation/project/trip into a structured, shareable document — even without literally saying "Skill" or "handover". Does not activate for an ordinary in-chat summary, an analytical report, or any request with no intent to hand off/share with a third party. Fully independent — no dependency on any other Skill or persistent-memory structure; builds the document from the current conversation's context only (messages, files, images).
 ---
 

@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.0 (2026-11-15)
+- Renamed to **baton** (was structured-handover): the skill is now `/baton:handover`; install with `/plugin install baton@samkari-plugins`. The repository was recreated under the new name. No behaviour change.
+
 ## 1.0.4 (2026-11-15)
 Skill text only (both copies and the `.skill` bundle rebuilt from the root file; identical after line-ending normalisation), from the round-2 adversarial report:
 - Resolved the contradiction between "no question in chat" and "ask one direct question if Subject/Domain is unclear": exactly one clarifying question in the chat is allowed, only before the document is created and only when the subject cannot be inferred; after creation the single document comment stays the only question.
